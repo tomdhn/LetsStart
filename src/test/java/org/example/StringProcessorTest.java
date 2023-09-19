@@ -2,19 +2,19 @@ package org.example;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StringPorcessorTest {
+class StringProcessorTest {
 
     @org.junit.jupiter.api.Test
     void appendIfMissing() {
-        StringPorcessor stringPorcessor = new StringPorcessor();
-        String result = stringPorcessor.appendIfMissing("hallo!","!");
+        StringProcessor stringProcessor = new StringProcessor();
+        String result = stringProcessor.appendIfMissing("hallo!","!");
         assertEquals(result, "hallo!");
     }
 
     @org.junit.jupiter.api.Test
     void appendIfMissingWithoutSuffix() {
-        StringPorcessor stringPorcessor = new StringPorcessor();
-        String result = stringPorcessor.appendIfMissing("hallo","!");
+        StringProcessor stringProcessor = new StringProcessor();
+        String result = stringProcessor.appendIfMissing("hallo","!");
         assertEquals(result, "hallo!");
     }
 }
